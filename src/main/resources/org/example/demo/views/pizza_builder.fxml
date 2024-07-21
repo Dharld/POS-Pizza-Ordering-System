@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="732.0" prefWidth="948.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.controllers.PizzaBuilderController">
+   <children>
+      <BorderPane prefHeight="735.0" prefWidth="948.0">
+         <center>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="640.0" prefWidth="808.0" style="-fx-background-color: white; -fx-background-radius: 12px;">
+               <left>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="608.0" prefWidth="378.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 8px;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Size" textFill="#ee791c">
+                           <font>
+                              <Font name="Product Sans Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox fx:id="hboxSize" spacing="6.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" stylesheets="@../css/globals.css" text="Small">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="size" />
+                                 </toggleGroup>
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" stylesheets="@../css/globals.css" text="Medium" toggleGroup="$size">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" stylesheets="@../css/globals.css" text="Large" toggleGroup="$size">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" stylesheets="@../css/globals.css" text="Extra Large" toggleGroup="$size">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" top="8.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="Crust" textFill="#ee791c">
+                           <font>
+                              <Font name="Product Sans Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="vboxCrust" spacing="12.0">
+                           <children>
+                              <RadioButton mnemonicParsing="false" text="Brooklyn Style">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="crust" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" text="Hand Tossed" toggleGroup="$crust">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" text="Crunchy Thin Crust" toggleGroup="$crust">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                           <padding>
+                              <Insets bottom="8.0" top="8.0" />
+                           </padding>
+                        </VBox>
+                        <Label text="Toppings" textFill="#ee791c">
+                           <font>
+                              <Font name="Product Sans Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="vboxToppings" spacing="12.0">
+                           <children>
+                              <CheckBox mnemonicParsing="false" text="Ham">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Premium Chicken">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Beef">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Bacon">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Salami">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Philly Steak">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Onions">
+                                 <font>
+                                    <Font name="Product Sans" size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Pineapple">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Black Olives">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox mnemonicParsing="false" text="Chedar Cheese">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="12.0" top="12.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+                     </padding>
+                  </VBox>
+               </left>
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+               <right>
+                  <VBox prefHeight="608.0" prefWidth="374.0" style="-fx-background-color: #f2f2f2; -fx-background-radius: 8px;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="130.0" prefWidth="350.0">
+                           <children>
+                              <Label text="Cheese" textFill="#ee791c">
+                                 <font>
+                                    <Font name="Product Sans Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <VBox fx:id="vboxCheese" spacing="12.0">
+                                 <children>
+                                    <RadioButton mnemonicParsing="false" selected="true" text="None">
+                                       <font>
+                                          <Font name="Product Sans" size="14.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="cheese" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Light" toggleGroup="$cheese">
+                                       <font>
+                                          <Font name="Product Sans" size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Normal" toggleGroup="$cheese">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                    <RadioButton mnemonicParsing="false" text="Extra" toggleGroup="$cheese">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="8.0" top="8.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="10.0" prefWidth="350.0" />
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <VBox spacing="4.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label prefHeight="18.0" prefWidth="85.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Pizza Name" textAlignment="CENTER" textFill="#565656" />
+                                       </children>
+                                       <padding>
+                                          <Insets left="12.0" right="16.0" />
+                                       </padding>
+                                    </HBox>
+                                    <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                       <children>
+                                          <TextField fx:id="textFieldName" prefHeight="42.0" prefWidth="359.0" promptText="Enter your pizza name" styleClass="input" stylesheets="@../css/globals.css" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="350.0">
+                                 <children>
+                                    <Label fx:id="labelPizzaPrice" text="\$0.00" textFill="#ee791c">
+                                       <font>
+                                          <Font name="Bebas Neue Regular" size="26.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Button mnemonicParsing="false" onAction="#addToCart" prefHeight="38.0" prefWidth="378.0" stylesheets="@../css/globals.css" text="Add To Cart" />
+                     </children>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                     <BorderPane.margin>
+                        <Insets left="8.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </right>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>

@@ -1,0 +1,11 @@
+.chip {
+    -fx-background-color: #D1D1D1;
+    -fx-text-fill: #4D4D4D;
+    -fx-alignment: center;
+    -fx-background-radius: 20px;
+}
+
+.chip.active {
+    -fx-background-color: #EE791C;
+    -fx-text-fill: #ffffff;
+}

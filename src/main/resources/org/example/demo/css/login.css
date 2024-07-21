@@ -1,0 +1,19 @@
+
+.signup-container {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 1000, .1, 0, 0);
+    -fx-background-radius: 4px;
+}
+
+.input-wrapper {
+    -fx-border-color: #C1C4C9;
+    -fx-border-radius: 4px;
+    -fx-border-width: .75px;
+    -fx-padding: 0 10px;
+}
+
+
+.input-wrapper:focused > * {
+    -fx-border-color: #EE791C;
+}
+

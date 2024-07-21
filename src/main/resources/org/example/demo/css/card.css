@@ -1,0 +1,17 @@
+.card {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 1000, .1, 0, 0);
+    -fx-background-radius: 10;
+    -fx-overflow: hidden;
+}
+
+.button {
+    -fx-background-color: #EE791C;
+    -fx-font-family: "Product Sans";
+    -fx-font-size: 14px;
+}
+
+.button:hover {
+    -fx-background-color: #F1954B;
+    -fx-font-size: 14px;
+}

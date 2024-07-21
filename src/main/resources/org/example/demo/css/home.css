@@ -1,0 +1,11 @@
+.sidebar {
+    -fx-border-color: #C1C4C9;
+    -fx-border-width: 0.25px;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.05), 1000, .1, 0, 0);
+}
+
+.sidebar-label {
+    -fx-text-fill: #C1C4C9;
+    -fx-font-size: 12px;
+}

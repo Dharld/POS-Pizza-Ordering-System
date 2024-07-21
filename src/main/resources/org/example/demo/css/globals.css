@@ -1,0 +1,60 @@
+
+.bg-primary {
+    -fx-border-radius: 0;
+    -fx-background-color:  #EE791C
+}
+
+.txt-subtle {
+    -fx-text-fill: #C1C4C9;
+    -fx-font-size: 14px;
+}
+
+.title {
+    -fx-font-family: "Product Sans";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: #002060;
+}
+
+.subtitle {
+    -fx-font-family: "Product Sans";
+    -fx-font-size: 14px;
+}
+
+.input-label {
+    -fx-font-family: "Product Sans";
+    -fx-font-size: 12px;
+    -fx-text-fill: #C1C4C9;
+}
+
+
+.input {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+.link {
+    -fx-font-family: "Product Sans";
+    -fx-text-fill: #C1C4C9;
+    -fx-font-size: 14px;
+    -fx-underline: true;
+}
+
+.link:hover {
+    -fx-text-fill: #EE791C;
+}
+
+.button {
+    -fx-background-color:  #EE791C;
+    -fx-font-family: "Product Sans";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+}
+
+.button:hover {
+    -fx-background-color: #F1954B;
+}
+
+

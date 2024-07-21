@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxWidth="-Infinity" prefHeight="768.0" prefWidth="924.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.controllers.HomeLayoutController">
+   <padding>
+      <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+   </padding>
+   <top>
+      <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="900.0" BorderPane.alignment="CENTER_RIGHT">
+         <children>
+            <HBox HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" spacing="12.0">
+               <children>
+                  <HBox alignment="CENTER" styleClass="searchbar" stylesheets="@../css/home_layout.css">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/search.png" />
+                           </image>
+                        </ImageView>
+                        <TextField prefHeight="50.0" prefWidth="450.0" promptText="Search Your pizza" styleClass="searchbar" stylesheets="@../css/home_layout.css" />
+                     </children>
+                     <padding>
+                        <Insets left="12.0" right="12.0" />
+                     </padding>
+                  </HBox>
+                  <VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="44.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/shopping-cart.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="42.0" prefWidth="900.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <VBox prefHeight="652.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="262.0" prefWidth="900.0" styleClass="banner" stylesheets="@../css/home_layout.css">
+               <children>
+                  <VBox prefHeight="310.0" prefWidth="482.0" />
+                  <VBox prefHeight="310.0" prefWidth="482.0" />
+               </children>
+            </HBox>
+            <VBox prefHeight="30.0" prefWidth="900.0" />
+            <Label text="Most Popular" textFill="#ee791c">
+               <font>
+                  <Font name="Product Sans Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="24.0" prefWidth="900.0" />
+            <HBox fx:id="popularsHBox" maxWidth="-Infinity" prefHeight="296.0" prefWidth="900.0" spacing="8.0" />
+            <VBox fx:id="scrollbarContainer" prefHeight="24.0" prefWidth="900.0" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

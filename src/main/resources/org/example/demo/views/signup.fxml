@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.controllers.SignupController">
+   <children>
+      <BorderPane layoutY="-6.0" prefHeight="774.0" prefWidth="1030.0">
+         <center>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="649.0" prefWidth="499.0" styleClass="signup-container" stylesheets="@../css/login.css" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+               <children>
+                  <Label text="Signup Page" textFill="#0e0d35">
+                     <font>
+                        <Font name="Product Sans Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label stylesheets="@../css/globals.css" text="Welcome to Pizza Shop, Enter your credentials">
+                     <styleClass>
+                        <String fx:value="subtitle" />
+                        <String fx:value="txt-subtle" />
+                     </styleClass>
+                     <padding>
+                        <Insets bottom="4.0" top="4.0" />
+                     </padding>
+                  </Label>
+                  <VBox opacity="0.22" prefHeight="0.125" prefWidth="100.0" style="-fx-background-color: #ccc;">
+                     <VBox.margin>
+                        <Insets bottom="12.0" top="12.0" />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox spacing="12.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <HBox spacing="4.0">
+                                 <children>
+                                    <VBox spacing="4.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="60.0" styleClass="input-label" stylesheets="@../css/globals.css" text="First Name" textAlignment="CENTER" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="12.0" right="16.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                             <children>
+                                                <TextField fx:id="textFieldFname" prefHeight="42.0" prefWidth="359.0" promptText="Enter your first name" styleClass="input" stylesheets="@../css/globals.css" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox spacing="4.0">
+                                       <children>
+                                          <HBox>
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="60.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Last Name" textAlignment="CENTER" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="12.0" right="16.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                             <children>
+                                                <TextField fx:id="textFieldLname" prefHeight="42.0" prefWidth="359.0" promptText="Enter your last name" styleClass="input" stylesheets="@../css/globals.css" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="4.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="60.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Email" textAlignment="CENTER" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                 <children>
+                                    <TextField fx:id="textFieldEmail" prefHeight="42.0" prefWidth="450.0" promptText="Eg: user@outlook.com" styleClass="input" stylesheets="@../css/globals.css" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="4.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="91.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Phone Number" textAlignment="CENTER" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                 <children>
+                                    <TextField fx:id="textFieldPhone" prefHeight="42.0" prefWidth="359.0" promptText="+1404638464" styleClass="input" stylesheets="@../css/globals.css" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="4.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="60.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Password" textAlignment="CENTER" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                 <children>
+                                    <PasswordField fx:id="textFieldPassword" prefHeight="42.0" prefWidth="425.0" promptText="Enter Your Password" styleClass="input" stylesheets="@../css/globals.css" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox spacing="4.0">
+                           <children>
+                              <HBox>
+                                 <children>
+                                    <Label prefHeight="18.0" prefWidth="124.0" styleClass="input-label" stylesheets="@../css/globals.css" text="Confirm Password" textAlignment="CENTER" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="12.0" right="16.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER" minHeight="-Infinity" styleClass="input-wrapper" stylesheets="@../css/login.css">
+                                 <children>
+                                    <PasswordField fx:id="textFieldConfirmPassword" minHeight="-Infinity" prefHeight="42.0" prefWidth="499.0" promptText="Enter Your Password Again" styleClass="input" stylesheets="@../css/globals.css" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </VBox>
+                  <VBox prefHeight="37.0" prefWidth="451.0" VBox.vgrow="ALWAYS" />
+                  <Button fx:id="signupButton" mnemonicParsing="false" onAction="#signup" prefHeight="42.0" prefWidth="521.0" stylesheets="@../css/globals.css" text="Sign Up" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                  <VBox prefHeight="18.0" prefWidth="377.0" />
+                  <HBox>
+                     <children>
+                        <Hyperlink fx:id="loginLink" onAction="#showLogin" prefHeight="24.0" prefWidth="452.0" text="Already have an account ? Login" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
